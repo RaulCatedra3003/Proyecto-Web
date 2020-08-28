@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;700&display=swap');
+
+/* -------- Start whith reset.css --------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------- Start whith the styles --------*/
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* -------- Base styles --------*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.containerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column {
+    width: 100%;
+}
+
+/* -------- Header styles --------*/
+.mainHeader {
+    width: 100%;
+}
+.logoName {
+    font-size: 1.8em;
+    color: #de453a;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.logoImg {
+    width: 80px;
+    height: 80px;
+    margin-left: 35px;
+    margin-top: 10px;
+    z-index: 1010;
+}
+.mainHeaderContactInfoPhone {
+    background: #de453a;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.mainHeaderContactInfoAddress {
+    margin: 0 auto;
+    padding: 10px;
+}
+.mainHeader [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/* -------- Nav menu styles --------*/
+.mainNav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu {
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.socialIcon {
+    display: flex;
+    justify-content: space-between;
+}
+.socialIcon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+.socialIconLink {
+    text-decoration: none;
+}
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menuLink {
+    display: block;
+    padding: 16.6px;
+    color: white;
+    text-decoration: none;
+}
+.menuLink:hover {
+    background: #de453a;
+}
+.menuLinkSelect {
+    background: #de453a;
+}
+.mostrar {
+    height: 246px;
+}
+
+/* -------- Banner styles -------- */
+.banner {
+    margin-top: -55px;
+    position: relative;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 0;
+}
+.bannerImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.bannerContent {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* -------- Footer styles -------- */
+.mainFooter {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.mainFooter [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+.mainFooter [clas*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+.columnTitle {
+    font-size: 1.3em;
+}
+
+@media screen and (min-width:257px) {
+    .logoImg {
+        margin-left: 65px;
+    }
+}
+@media screen and (min-width:480px) {
+    .logoName {
+        color: white;
+    }
+    .logoImg {
+        margin-left: 35px;
+    } 
+    .mainHeaderContactInfo {
+        text-align: right;
+    }
+    .mainHeaderContactInfoPhone {
+        background: none;
+    }
+    .mainHeaderContactInfoAddress {
+        color: white;
+    }
+    .mainNav {
+        background: rgba(0,0,0,.85);
+    }
+    .banner {
+        margin-top: -320px;
+        z-index: -1000;
+    }
+    .bannerImg {
+        height: 800px;
+    }
+    .mainFooter .containerFlex {
+        align-items: flex-start;
+    }
+    .column {
+        width: 50%;
+    }
+    .column33 {
+        width: 32%;
+    }  
+ }
+ @media screen and (min-width:496px) {
+    .logoImg {
+        margin-left: 65px;
+    }
+}
+ @media screen and (min-width:768px) {
+    .columnTitle {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px) {
+  .container {
+      width: 1000px;
+  }  
+  .logo {
+     font-size: 2em;
+     padding: 0; 
+  }
+  .mainHeaderContactInfoPhone, .mainHeaderContactInfoAddress {
+      padding-right: 0;
+      font-size: 1.15em;
+  }
+  .mainNav {
+      padding: 0;
+  }
+  .bannerImg {
+      height: 1000px;
+  }
+  .bannerContent {
+      font-size: 2.5em;
+  }
+  .icon-menu {
+      display: none;
+  }
+  .menu {
+      position: static;
+      display: flex;
+      height: auto;
+      width: auto;
+  }
+  .menuLink {
+      padding: 20px;
+  }
+  .mainFooter {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+}
+@media screen and (min-width:1600px) {
+    .container {
+        width: 1400px;
+    }
+    .bannerImg {
+        height: 1200px;
+    }
+}
