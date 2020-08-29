@@ -73,6 +73,7 @@ img {
 }
 .column {
     width: 100%;
+    height: 100%;
 }
 
 /* -------- Header styles --------*/
@@ -81,7 +82,7 @@ img {
 }
 .logoName {
     font-size: 1.8em;
-    color: #de453a;
+    color: #fcab01;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -94,7 +95,7 @@ img {
     z-index: 1010;
 }
 .mainHeaderContactInfoPhone {
-    background: #de453a;
+    background: #fcab01;
     color: white;
     margin: 0 auto;
     padding: 10px;
@@ -168,10 +169,10 @@ img {
     text-decoration: none;
 }
 .menuLink:hover {
-    background: #de453a;
+    background: #fcab01;
 }
 .menuLinkSelect {
-    background: #de453a;
+    background: #fcab01;
 }
 .mostrar {
     height: 246px;
@@ -197,7 +198,7 @@ img {
     object-fit: cover;
 }
 .bannerContent {
-    width: 90%;
+    width: 100%;
     color: white;
     text-align: center;
     position: absolute;
@@ -235,6 +236,7 @@ img {
     font-size: 1.3em;
 }
 
+ /* -------- Resposive Stiles -------- */
 @media screen and (min-width:257px) {
     .logoImg {
         margin-left: 65px;

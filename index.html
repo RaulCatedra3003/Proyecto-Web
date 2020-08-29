@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=3.0, minimum-scale=1.0"><!--set content and scale-->
     <link rel="stylesheet" href="css/styles.css"><!--link styles-->
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://file.myfontastic.com/V4ZjUhcZsYPwUfdizhQVfE/icons.css" rel="stylesheet"><!--link icons-->
     <title>Sonomas S.L.U.</title>
 </head>
@@ -45,6 +46,62 @@
       <img src="img/banner.jpg" alt="banner" class="bannerImg">
       <div class="bannerContent">Soluciones técnicas para el directo</div>
   </section>
+  <main class="main"><!--Create the page main-->
+     <section class="group"><!--Create the slider-->
+        <img src="img/sliderbanner.jpg" alt="" class="slideBannerImg">
+        <div class="slideBox container containerFlex">
+            <div class="mySlider fade">
+                <img src="img/slide1.jpg" alt="Bienvenida">
+                <div class="sliderContent">Bienvenido a tu empresa de producción de eventos</div>
+                <p class="sliderParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, id? Dolore mollitia sequi quisquam tempora, sit nisi eos nulla voluptatem ab veniam corporis in! Error nobis qui pariatur cum minima.</p>
+            </div>
+            <div class="mySlider fade">
+                <img src="img/slide2.jpg" alt="Equipos">
+                <div class="sliderContent">Últimas tendencias en sonido</div>
+                <p class="sliderParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, porro. Eligendi impedit ratione explicabo voluptates modi, magnam reprehenderit incidunt esse quia atque eum, dolores alias doloremque, non delectus blanditiis consequatur.</p>
+            </div>
+            <div class="mySlider fade">
+                <img src="img/slide3.jpg" alt="Experiencia">
+                <div class="sliderContent">Más de una década de experiencia</div>
+                <p class="sliderParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam dolores quo dolorum ab est earum eveniet expedita tempore. Laudantium tempore itaque atque ratione, alias pariatur cupiditate dolor iusto amet?</p>
+            </div>
+            <div class="directions">
+                <span class="icon-arrowleft" onclick="slideGo(-1)"></span>
+                <span class="icon-arrowright" onclick="slideGo(1)"></span>   
+            </div>
+            <div class="bars">
+                <span class="bar active" onclick="slidePosition(1)"></span>
+                <span class="bar" onclick="slidePosition(2)"></span>
+                <span class="bar" onclick="slidePosition(3)"></span>
+            </div>
+        </div>  
+     </section>
+     <section class="group1 outstanding">
+         <h2 class="outstandingTitle">Destacados</h2>
+         <div class="container containerFlex">
+             <div class="column column50-25">
+                 <a href="paginas/servicio1.html"><img src="img/outstanding1.jpg" alt="Destacados 1" class="todayOutstandingImg"></a>
+                 <div class="todayOutstandingTitle">Últimas novedades d&b</div>
+                 <p class="todayOutstandingParagraph">El nuevo modelo de Line Array GSL ofrece una direccionalidad precisa hasta en las frecuencias más bajas, con una gran potencia y un peso de 80kg, al tiempo que mantiene la importantísima arquitectura de d & b</p>
+             </div>
+             <div class="column column50-25">
+                <a href="paginas/servicio2.html"><img src="img/outstanding2.jpg" alt="Destacados 2" class="todayOutstandingImg"></a>
+                 <div class="todayOutstandingTitle">No solo escenarios</div>
+                 <p class="todayOutstandingParagraph">Descubre la gran variedad de montajes posibles con Layher</p>
+             </div>
+             <div class="column column50-25">
+                 <a href="paginas/servicio3.html"><img src="img/outstanding3.jpg" alt="Destacados 3" class="todayOutstandingImg"></a>
+                 <div class="todayOutstandingTitle">De lo clásico a lo moderno</div>
+                 <p class="todayOutstandingParagraph">Contamos con una gran variedad de backline, de los grandes clásicos a las últimas novedades de las grandes marcas</p>
+             </div>
+             <div class="column column50-25">
+                 <a href="paginas/servicio4.html"><img src="img/outstanding4.jpg" alt="Destacados 4" class="todayOutstandingImg"></a>
+                 <div class="todayOutstandingTitle">Visuales nunca antes vistas</div>
+                 <p class="todayOutstandingParagraph">Grandes posibilidades de diseño de visuales gracias a los nuevos paneles led</p>
+             </div>
+         </div>
+     </section> 
+  </main>
   <footer class="mainFooter"><!--Create the footer-->
       <div class="container containerFlex">
           <div class="column column33">
@@ -66,6 +123,7 @@
       </div>
       <p class="copy">© 2020 Sonomas S.L.U. | Todos los derechos reservados</p>
   </footer>
-  <script src="js/menu.js"></script>  
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>  
 </body>
 </html>
