@@ -154,7 +154,7 @@
     font-size: 1em;
 }
 
-/* -------- Resposive Stiles -------- */
+/* -------- Responsive Stiles -------- */
 @media screen and (min-width:100px) {
     .slideBannerImg {
         display: none;
