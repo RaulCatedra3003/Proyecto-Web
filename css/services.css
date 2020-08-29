@@ -1,0 +1,82 @@
+/* -------- Services box stiles -------- */
+.groupColor .container {
+    background: #fcab01;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.mainTitle {
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+}
+.mainTxt {
+    font-size: 1em;
+}
+
+/* -------- Services stiles -------- */
+.servicesTitle {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-weight: 100; 
+    font-size: 1.8em;
+    margin: 30px;     
+}
+.services .column {
+    margin-bottom: 30px;
+    text-align: center;
+    align-self: start;
+}
+.servicesImg {
+    margin: auto;
+    max-width: 350px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+}
+.servicesTitle {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;  
+}
+.servicesParagraph {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* -------- Responsive stiles -------- */
+@media screen and (min-width:480px) {
+    .services .column {
+        padding: 5px;
+    }
+    .servicesImg {
+        height: 250px;
+        object-fit: cover;
+    }
+    .column50-25 {
+        width: 49%;
+    }
+}
+@media screen and (min-width:768px) {
+    .mainTitle {
+        font-size: 1.8em;
+    }
+    .mainTxt {
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width:1024px) {
+
+}
+@media screen and (min-width:1600px) {
+    .column50-25 {
+        width: 24.5%;
+    }
+    .mainTitle {
+        font-size: 2em;
+    }
+    .mainTxt {
+        font-size: 1.5em;
+    }
+}
