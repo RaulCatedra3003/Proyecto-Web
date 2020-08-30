@@ -25,8 +25,8 @@ function slideShow(n) {
         slides[i].style.display = 'none';
     }
     for (i = 0; i < bars.length; i++){
-        bars[i].className = bars[i].className.replace (" active", "");
+        bars[i].className = bars[i].className.replace (" active1", "");
     }
     slides[indice-1].style.display = 'block';
-    bars[indice-1].className += ' active';
+    bars[indice-1].className += ' active1';
 }

@@ -113,11 +113,12 @@ img {
 /* -------- Nav menu styles --------*/
 .mainNav {
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2000;
     padding: 10px;
 }
-.icon-menu {
+.icon-menu,
+.icon-times {
     display: block;
     color: white;
     border: 1px solid white;
@@ -128,6 +129,7 @@ img {
     text-align: center;
     cursor: pointer;
     font-size: 1.5em;
+    
 }
 .socialIcon {
     display: flex;
@@ -148,19 +150,48 @@ img {
 .socialIconLink {
     text-decoration: none;
 }
+.menu,
+.subMenu {
+    list-style-type: none;
+}
+.item {
+    padding: 10px;
+    color: white;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}  
 .menu {
-    position: absolute;
-    top: 60px;
-    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subItem a {
+    padding: 15px;
+}
+.item {
     width: 100%;
-    background: rgba(0,0,0,.85);
-    padding: 0;
-    margin: 0;
-    list-style: none;
     text-align: center;
-    height: 0;
-    overflow: hidden;
-    transition: height .3s linear;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+.subMenu {
+    display: none;
+}
+.subMenuActive .subMenu {
+    display: block;
+}
+.subItem a {
+    padding: 10px 15px;
 }
 .menuLink {
     display: block;
@@ -168,19 +199,27 @@ img {
     color: white;
     text-decoration: none;
 }
-.menuLink:hover {
-    background: #fcab01;
-}
 .menuLinkSelect {
     background: #fcab01;
+}
+.subMenuLinkSelect {
+    border: 2px solid #fcab01;
 }
 .mostrar {
     height: 246px;
 }
+.subMenu a {
+    padding: 10px;
+    color: white;
+    font-size: .8em;
+}
+.menu a {
+    text-decoration: none;
+}
 
 /* -------- Banner styles -------- */
 .banner {
-    margin-top: -55px;
+    margin-top: 0;
     position: relative;
 }
 .banner:before {
@@ -194,13 +233,14 @@ img {
 }
 .bannerImg {
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 }
 .bannerContent {
     width: 100%;
     color: white;
     text-align: center;
+    margin-top: 100px;
     position: absolute;
     z-index: 1500;
     top: 50%;
@@ -309,17 +349,25 @@ img {
   .bannerContent {
       font-size: 2.5em;
   }
-  .icon-menu {
+  .icon-menu,
+  .icon-times {
       display: none;
-  }
-  .menu {
-      position: static;
-      display: flex;
-      height: auto;
-      width: auto;
   }
   .menuLink {
       padding: 20px;
+  }
+  .item {
+      position: relative;
+      display: block;
+      height: auto;
+      width: auto;
+  }
+  .subMenuActive .subMenu{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 69px;
+      background: rgba(0,0,0,.85);
   }
   .mainFooter {
       padding-top: 30px;

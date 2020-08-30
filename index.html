@@ -26,21 +26,34 @@
     </div>
   </header>
   <nav class="mainNav"><!--Create the menu list, and social media icons-->
-      <div class="container containerFlex">
-          <span class="icon-menu" id=btnMenu></span>
-          <ul class="menu" id="menu">
-              <li class="menuItem"><a href="index.html" class="menuLink menuLinkSelect">Home</a></li>
-              <li class="menuItem"><a href="about.html" class="menuLink">Quienes somos</a></li>
-              <li class="menuItem"><a href="services.html" class="menuLink">Servicios</a></li>
-              <li class="menuItem"><a href="galery.html" class="menuLink">Galería</a></li>
-              <li class="menuItem"><a href="contact.html" class="menuLink">Contacto</a></li>
-          </ul>
-          <div class="socialIcon">
-              <a href="https://www.facebook.com/" class="socialIconLink"><span class="icon-facebook"></span></a>
-              <a href="https://twitter.com/?lang=es" class="socialIconLink"><span class="icon-twitter"></span></a>
-              <a href="contact.html" class="socialIconLink"><span class="icon-mail"></span></a>
-          </div>
-      </div>
+    <div class="container containerFlex">
+        <ul class="menu">
+            <li class="toggle"><a href="#"><i class="icon-menu iconLink"></i></a></li>
+            <li class="item"><a href="/" class="menuLink menuLinkSelect">Home</a></li>
+            <li class="item"><a href="about.html" class="menuLink">Quienes somos</a></li>
+            <li class="item">
+                <a tabindex="0"><span class="icon-menu2">Servicios</span></a>
+                <ul class="subMenu">
+                  <li class="subItem"><a href="services.html" class="subMenuLink">Servicios</a></li> 
+                  <li class="subItem"><a href="service1.html" class="subMenuLink">Equipos de sonido</a></li>
+                  <li class="subItem"><a href="service2.html" class="subMenuLink">Equipos de iluminación</a></li>
+                  <li class="subItem"><a href="service3.html" class="subMenuLink">Alquiler de Backline</a></li>
+                  <li class="subItem"><a href="service4.html" class="subMenuLink">Equipos de video</a></li>
+                  <li class="subItem"><a href="service5.html" class="subMenuLink">Layher</a></li>
+                  <li class="subItem"><a href="service6.html" class="subMenuLink">Ingenieria</a></li>
+                  <li class="subItem"><a href="service7.html" class="subMenuLink">Rigging</a></li>
+                  <li class="subItem"><a href="service8.html" class="subMenuLink">Producción técnica</a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="galery.html" class="menuLink">Galería</a></li>
+            <li class="item"><a href="contact.html" class="menuLink">Contacto</a></li>
+        </ul>
+        <div class="socialIcon">
+            <a href="https://www.facebook.com/" class="socialIconLink"><span class="icon-facebook"></span></a>
+            <a href="https://twitter.com/?lang=es" class="socialIconLink"><span class="icon-twitter"></span></a>
+            <a href="contact.html" class="socialIconLink"><span class="icon-mail"></span></a>
+        </div>
+    </div>
   </nav>
   <section class="banner"><!--Create the banner-->
       <img src="img/banner.jpg" alt="banner" class="bannerImg">
@@ -70,7 +83,7 @@
                 <span class="icon-arrowright" onclick="slideGo(1)"></span>   
             </div>
             <div class="bars">
-                <span class="bar active" onclick="slidePosition(1)"></span>
+                <span class="bar active1" onclick="slidePosition(1)"></span>
                 <span class="bar" onclick="slidePosition(2)"></span>
                 <span class="bar" onclick="slidePosition(3)"></span>
             </div>
