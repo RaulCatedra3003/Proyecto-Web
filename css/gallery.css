@@ -1,3 +1,4 @@
+/* -------- Main gallery stile -------- */
 .galleryTitle {
     position: relative;
     text-align: center;
@@ -50,6 +51,7 @@
     grid-column-start: span 2;
 }
 
+/* -------- Responsive gallery stile -------- */
 @media (min-width:768px){
     .galleryContainer {
         grid-template-columns: repeat(4, 1fr);
