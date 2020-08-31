@@ -16,8 +16,42 @@
 }
 .galleryItem {
     position: relative;
+    cursor: pointer;
+}
+.galleryItem:before,
+.galleryItem:after {
+    position: absolute;
+    transition: .2s;
+}
+.galleryItem:before {
+    color: white;
+    font-size: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.galleryItem:hover:before {
+    font-size: 1.5rem;
+}
+.galleryItem:after{
+    display: block;
+    content: "";
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+}
+.galleryItem:hover:after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
 }
 .galleryImg {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -49,6 +83,65 @@
 }
 .galleryItem:nth-child(14) {
     grid-column-start: span 2;
+}
+
+/* -------- Ligthbox gallery stile -------- */
+.galleryLigthbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 3000;
+    font-size: 16px;
+    padding: 0 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.galleryLigthbox.show {
+    display: flex;
+}
+.galleryLightboxModal {
+    position: relative;
+    background-color: white;
+    padding: 5px;
+    max-width: 1400px;
+    max-height: 875px;
+}
+.galleryLightboxImg {
+    display: flex;
+    max-width: 1400px;
+    max-height: 865px;
+}
+.galleryLightboxControl:before {
+    display: block;
+}
+.galleryLightboxControl {
+    position: absolute;
+    cursor: pointer;
+}
+.galleryLightboxControl.icon-close {
+    top: -25px;
+    right: -15px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+.galleryLightboxControl.icon-arrowright,
+.galleryLightboxControl.icon-arrowleft {
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    transform: translateY(-50%);   
+}
+.galleryLightboxControl.icon-arrowright {
+    right: 10px;
+}
+.galleryLightboxControl.icon-arrowleft {
+    left: 10px;
 }
 
 /* -------- Responsive gallery stile -------- */
