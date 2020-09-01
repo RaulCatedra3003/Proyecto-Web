@@ -29,10 +29,10 @@
     <div class="container containerFlex">
         <ul class="menu">
             <li class="toggle"><a href="#"><i class="icon-menu iconLink"></i></a></li>
-            <li class="item"><a href="/" class="menuLink">Home</a></li>
-            <li class="item"><a href="about.html" class="menuLink">Quienes somos</a></li>
+            <li class="item"><a href="index.html" class="menuLink">Home</a></li>
+            <li class="item"><a href="about.html" class="menuLink">Sobre nosotros</a></li>
             <li class="item">
-                <a tabindex="0" class="menuLinkSelect"><span class="icon-menu2">Servicios</span></a>
+                <a tabindex="0" class="menuLinkSelect">Servicios<span class="icon-menu2"></span></a>
                 <ul class="subMenu">
                   <li class="subItem"><a href="services.html" class="subMenuLink">Servicios</a></li> 
                   <li class="subItem"><a href="service1.html" class="subMenuLink">Equipos de sonido</a></li>
@@ -55,9 +55,14 @@
         </div>
     </div>
   </nav>
+  <ul class="breadcrumb"><!--Create the breadcrumb-->
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Servicios</a></li>
+    <li><a href="#">Ingenieria</a></li>
+  </ul>
   <section class="banner"><!--Create the banner-->
       <img src="img/service6.jpg" alt="banner" class="bannerImg">
-      <div class="bannerContent">Ingenieria</div>
+      <h2 class="bannerContent">Ingenieria</h2>
   </section>
   <main class="main"><!--Create text container-->
     <section class="group groupColor">
@@ -74,10 +79,28 @@
             <div class="column column50">
                 <h3 class="aboutTitle">Lideres del sector</h3>
                 <p class="aboutTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus minima nihil dolor impedit ratione nemo quas cum, odit assumenda, reiciendis odio exercitationem sint error autem iusto laborum hic aliquid!</p>
-                <a href="contact.html" class="btn btnContact">Contacto</a>
+                <h3 class="btn" id='btn'>Más información</h3>
             </div>
         </div>
     </section>
+    <div class="subServicesLightbox">
+        <div class="subServicesLightboxModal">
+            <form name="moreInfoform" onsubmit="return formValidation();" class="moreInfoForm" id="moreInfoForm">
+               <h2 class="formTitle">Más información</h2>
+               <span class="formLightboxControl icon-close" id="iconclose"></span>
+               <input type="text" name="names" class="formInput">
+               <label for="nombre" class="formLabel">Nombre</label>
+               <input type="text" name="emails" class="formInput">
+               <label for="email" class="formLabel">Email</label> 
+               <input type="text" name="phones"" class="formInput">
+               <label for="phone" class="formLabel">Teléfono</label> 
+               <textarea name="asuntos" id="asuntos" placeholder="Asunto" class="formInput1"></textarea>
+               <input type="submit" class="formSubmit" value="Enviar">  
+            </form>
+            <div class="error" id="error"></div>
+            <div class="succes" id="succes"></div>
+        </div>
+    </div>
   </main>  
   <footer class="mainFooter"><!--Create the footer-->
       <div class="container containerFlex">
@@ -100,6 +123,7 @@
       </div>
       <p class="copy">© 2020 Sonomas S.L.U. | Todos los derechos reservados</p>
   </footer>
-  <script src="js/menu.js"></script>  
+  <script src="js/menu.js"></script>
+  <script src="js/subservices.js"></script>  
 </body>
 </html>

@@ -50,7 +50,6 @@
     position: absolute;
     z-index: 1500;
     top: 38%;
-    transform: translateX(-50%) translateY(-50);
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
@@ -64,7 +63,6 @@
     position: absolute;
     z-index: 1500;
     top: 58%;
-    transform: translateX(-50%) translateY(-50);
     font-family: 'Fjalla One', sans-serif;
     font-size: .7em;
 }
@@ -78,7 +76,7 @@
     align-items: center;
 }
 .directions [class*="icon-"] {
-    color: black;
+    color: white;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -86,8 +84,6 @@
     font-size: 1.3em;
     width: 23px;
     height: 23px;
-    background: white;
-    border-radius: 50%;
     z-index: 1500;
 }
 .directions [class*="icon-"]:hover {

@@ -29,10 +29,10 @@
     <div class="container containerFlex">
         <ul class="menu">
             <li class="toggle"><a href="#"><i class="icon-menu iconLink"></i></a></li>
-            <li class="item"><a href="/" class="menuLink">Home</a></li>
-            <li class="item"><a href="about.html" class="menuLink">Quienes somos</a></li>
+            <li class="item"><a href="index.html" class="menuLink">Home</a></li>
+            <li class="item"><a href="about.html" class="menuLink">Sobre nosotros</a></li>
             <li class="item">
-                <a tabindex="0" class="menuLinkSelect"><span class="icon-menu2">Servicios</span></a>
+                <a tabindex="0" class="menuLinkSelect">Servicios<span class="icon-menu2"></span></a>
                 <ul class="subMenu">
                   <li class="subItem"><a href="services.html" class="subMenuLink subMenuLinkSelect">Servicios</a></li> 
                   <li class="subItem"><a href="service1.html" class="subMenuLink">Equipos de sonido</a></li>
@@ -55,9 +55,13 @@
         </div>
     </div>
   </nav>
+  <ul class="breadcrumb"><!--Create the breadcrumb-->
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Servicios</a></li>
+  </ul>
   <section class="banner"><!--Create the banner-->
       <img src="img/servicesbanner.jpg" alt="banner" class="bannerImg">
-      <div class="bannerContent">Damos solución a tus necesidades</div>
+      <h2 class="bannerContent">Damos solución a tus necesidades</h2>
   </section>
   <main class="main"><!--Create text container-->
     <section class="group groupColor">
@@ -91,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="group2 services">
+    <div class="group2 services">
         <div class="container containerFlex">
             <div class="column column50-25">
                 <a href="service5.html"><img src="img/service5.jpg" alt="Servicio 5" class="servicesImg"></a>
@@ -114,7 +118,7 @@
                 <p class="servicesParagraph">Grandes posibilidades de diseño de visuales gracias a los nuevos paneles led</p>
             </div>
         </div>
-    </section>  
+    </div>  
   </main>
   <footer class="mainFooter"><!--Create the footer-->
       <div class="container containerFlex">

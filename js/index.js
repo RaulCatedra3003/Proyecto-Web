@@ -19,7 +19,7 @@ function slideShow(n) {
         indice = 1;
     }
     if (n < 1){
-        indice = slides.length();
+        indice = slides.length;
     }
     for (i = 0; i < slides.length; i++){
         slides[i].style.display = 'none';

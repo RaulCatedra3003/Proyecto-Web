@@ -217,6 +217,36 @@ img {
     text-decoration: none;
 }
 
+/* -------- Breadcrumb styles -------- */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgba(0,0,0,.9);
+    position: absolute;
+    right: 0px;
+    top: 400px;
+    z-index: 1001;
+    display: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: none;
+}
+
+
 /* -------- Banner styles -------- */
 .banner {
     margin-top: 0;
@@ -244,7 +274,6 @@ img {
     position: absolute;
     z-index: 1500;
     top: 50%;
-    transform: translateX(-50%) translateY(-50);
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -316,12 +345,19 @@ img {
     }
     .column33 {
         width: 32%;
-    }  
+    }
+    ul.breadcrumb {
+        display: block;
+        top: 256px;
+      }  
  }
  @media screen and (min-width:496px) {
     .logoImg {
         margin-left: 65px;
     }
+    ul.breadcrumb{
+        top: 227px;
+      }
 }
  @media screen and (min-width:768px) {
     .columnTitle {
@@ -372,6 +408,9 @@ img {
   .mainFooter {
       padding-top: 30px;
       padding-bottom: 30px;
+  }
+  ul.breadcrumb{
+    top: 207px;
   }
 }
 @media screen and (min-width:1600px) {

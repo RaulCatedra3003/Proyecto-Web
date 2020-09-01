@@ -29,10 +29,10 @@
     <div class="container containerFlex">
         <ul class="menu">
             <li class="toggle"><a href="#"><i class="icon-menu iconLink"></i></a></li>
-            <li class="item"><a href="/" class="menuLink menuLinkSelect">Home</a></li>
-            <li class="item"><a href="about.html" class="menuLink">Quienes somos</a></li>
+            <li class="item"><a href="index.html" class="menuLink menuLinkSelect">Home</a></li>
+            <li class="item"><a href="about.html" class="menuLink">Sobre nosotros</a></li>
             <li class="item">
-                <a tabindex="0"><span class="icon-menu2">Servicios</span></a>
+                <a tabindex="0">Servicios <span class="icon-menu2"></span></a>
                 <ul class="subMenu">
                   <li class="subItem"><a href="services.html" class="subMenuLink">Servicios</a></li> 
                   <li class="subItem"><a href="service1.html" class="subMenuLink">Equipos de sonido</a></li>
@@ -55,12 +55,15 @@
         </div>
     </div>
   </nav>
+  <ul class="breadcrumb"><!--Create the breadcrumb-->
+      <li><a href="index.html">Home</a></li>
+  </ul>  
   <section class="banner"><!--Create the banner-->
       <img src="img/banner.jpg" alt="banner" class="bannerImg">
-      <div class="bannerContent">Soluciones técnicas para el directo</div>
+      <h2 class="bannerContent">Soluciones técnicas para el directo</h2>
   </section>
   <main class="main"><!--Create the page main-->
-     <section class="group"><!--Create the slider-->
+     <div class="group"><!--Create the slider-->
         <img src="img/sliderbanner.jpg" alt="" class="slideBannerImg">
         <div class="slideBox container containerFlex">
             <div class="mySlider fade">
@@ -88,7 +91,7 @@
                 <span class="bar" onclick="slidePosition(3)"></span>
             </div>
         </div>  
-     </section>
+    </div>
      <section class="group1 outstanding"><!--Create the outstanding-->
          <h2 class="outstandingTitle">Destacados</h2>
          <div class="container containerFlex">

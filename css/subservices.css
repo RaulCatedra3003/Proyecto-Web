@@ -35,9 +35,151 @@
     color: white;
     padding: 10px;
     margin: 10px auto;
+    cursor: pointer;
 }
-/* -------- Responsive Stiles -------- */
-@media screen and (min-width:768px){
+
+/* -------- Lightbox stiles -------- */
+.subServicesLightbox{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 3000;
+    font-size: 16px;
+    padding: 0 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.show {
+    display: flex;
+}
+.subServicesLightboxModal{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 100%;
+    max-height: 100%;  
+}
+.moreInfoForm {
+    position: relative; 
+    max-width: 300px;
+    max-height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+.formTitle {
+    display: flexbox;
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+.formLabel,
+.formSubmit {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+.formInput {
+    font-size: 1em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 3000;
+    max-width: 100%;
+}
+.formInput1 {
+    font-family: 'Fjalla One', sans-serif;
+    min-width: 210px;
+    max-width: 237px;
+    min-height: 100px;
+    max-height: 300px;
+    font-size: 1em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 3000;
+    width: 100%;
+}
+.formInput:focus + 
+.formLabel {
+    margin-top: -95px;
+}
+.formLabel {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -70px;
+    color: rgba(0,0,0,.5);
+    z-index: 0;
+    transition: .2s;
+    text-align: left;
+}
+.formSubmit {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4em;
+    background: rgba(0,0,0,.6);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.fixe {
+    margin-top: -95px;
+}
+.formLightboxControl {
+    position: relative;
+    cursor: pointer;
+    top: -110px;
+    right: -150px;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.error {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: .7em;
+    position: relative;
+    top: -490px;
+    text-align: center;
+    color: red;
+}
+.succes {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: .7em;
+    position: relative;
+    top: -490px;
+    text-align: center;
+    color: green;
+}
+
+/* -------- Responsive stiles -------- */
+@media (max-width:281px){
+    .formInput1 {
+        max-width: 110px;
+    }
+    .formLightboxControl {
+        right: -128px;
+    }
+}
+@media screen and (min-width:768px) {
     .mainTitle {
         font-size: 1.8em;
     }
@@ -51,7 +193,7 @@
         font-size: 1.3em;        
     }
 }
-@media screen and (min-width:1600px){
+@media screen and (min-width:1600px) {
     .mainTitle {
         font-size: 2em;
     }
