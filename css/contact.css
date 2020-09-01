@@ -1,0 +1,123 @@
+/* -------- Contact form stiles --------*/
+.main {
+    height: 800px; 
+}
+.formBox {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.form {
+    position: relative; 
+    top: 100px;   
+}
+.formTitle {
+    width: 100%;
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: -50px;
+}
+.contactForm{
+    position: flex;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    z-index: 1000;
+}
+.submit {
+    font-size: 1.5em;
+    width: 200px;
+    display: flexbox;
+}
+.formInput {
+    font-size: 1.1em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, .1);
+    z-index: 3000;
+    max-width: 100%;
+}
+.formSelect{
+    font-size: 1em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+}
+.formTextarea {
+    font-family: 'Fjalla One', sans-serif;
+    min-width: 257px;
+    max-width: 257px;
+    min-height: 200px;
+    max-height: 200px;
+    font-size: 1em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+.formLabel {
+    font-size: 1em;
+    color: rgba(0,0,0,.5);
+}
+.submit {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4em;
+    background: rgba(0,0,0,.6);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.error {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    color: red;
+}
+.succes {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    color: green;
+}
+
+/* -------- Responsive Stiles -------- */
+@media screen and (min-width:768px) {
+    .formLabel,
+    .submit,
+    .formInput {
+        font-size: 1.5em;
+    }
+    .formSelect {
+        font-size: 1.4em;
+    }
+    .formTextarea {
+        min-width: 340px;
+        max-width: 340px; 
+    }
+    .main {
+        height: 870px; 
+    }
+    .error,
+    .succes {
+        top: 65px; 
+    }
+}

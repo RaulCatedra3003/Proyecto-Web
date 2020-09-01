@@ -58,11 +58,38 @@
     <ul class="breadcrumb"><!--Create the breadcrumb-->
       <li><a href="index.html">Home</a></li>
       <li><a href="#">Contacto</a></li>
-  </ul>
+    </ul>
     <section class="banner"><!--Create the banner-->
         <img src="img/contactbanner.jpg" alt="banner" class="bannerImg">
         <h2 class="bannerContent">Contacto</h2>
     </section>
+    <main class="main">
+        <section class="form">
+            <h2 class="formTitle">Contacto</h2>
+            <form name="contactForm" onsubmit="return formValidation();" class="contactForm" id="contactForm">
+                <ul>
+                    <li><label for="names" class="formLabel">Nombre</label></li>
+                    <li><input type="text" name="names" class="formInput"></li>
+                    <li><label for="phones" class="formLabel">Teléfono</label></li>
+                    <li><input type="text" name="phones" class="formInput"></li>
+                    <li><label for="mails" class="formLabel">Email</label></li>
+                    <li><input type="text" name="mails" class="formInput"></li>
+                    <li><select name="asunto" class="formSelect" >
+                        <option selected="" value="Default">Seleccione una opción</option>
+                        <option value="1">Información sobre servicios</option>
+                        <option value="2">Presupuestos</option>
+                        <option value="3">Contratación</option>
+                        <option value="4">Otros</option>
+                    </select></li>
+                    <li><label for="desc" class="formLabel">Descripción</label></li>
+                    <li><textarea name="desc" id="desc" class="formTextarea"></textarea></li>
+                    <li><input type="submit" class="submit" value="Enviar"></li>
+                </ul>
+            </form>
+            <div class="error" id="error"></div>
+            <div class="succes" id="succes"></div>
+        </section>
+    </main>
     <footer class="mainFooter"><!--Create the footer-->
         <div class="container containerFlex">
             <div class="column column33">
@@ -84,6 +111,7 @@
         </div>
         <p class="copy">© 2020 Sonomas S.L.U. | Todos los derechos reservados</p>
     </footer>
-    <script src="js/menu.js"></script>  
-  </body>
-  </html>
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>  
+</body>
+</html>
