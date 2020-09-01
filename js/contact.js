@@ -28,7 +28,7 @@ function formValidation(){
     return false;
 
     function nmsValidation(unames){
-        var letters = /^[A-Za-z]+$/;
+        var letters = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         if (unames.value.match(letters)){
             console.log('Nombre correcto');
             return true;

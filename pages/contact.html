@@ -3,16 +3,18 @@
 <head><!--Start html head-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=3.0, minimum-scale=1.0"><!--set content and scale-->
-    <link rel="stylesheet" href="css/styles.css"><!--link styles-->
-    <link rel="stylesheet" href="css/contact.css">
-    <link href="https://file.myfontastic.com/V4ZjUhcZsYPwUfdizhQVfE/icons.css" rel="stylesheet"><!--link icons-->
+    <meta name="keywords" content="Sonomas, Sonomas S.L.U., Produccion de eventos, eventos, produccion tecnica, equipos de sonido, equipos de video, iluminacion, rigging, backline, layher" />
+    <meta name="description" content="This is a company website">
+    <link rel="stylesheet" href="../css/styles.css"><!--link styles-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/font.css"><!--link icons-->
     <title>Contacto</title>
 </head>
 <body><!--Create web body-->
     <header class="mainHeader"><!--Create header whith logo, phone and address-->
       <div class="container containerFlex">
           <div class="logoContainer column column50">
-              <img src="img/logo.png" alt="logo" class="logoImg">
+              <img src="../img/logo.png" alt="logo" class="logoImg">
               <h1 class="logoName">Sonomas S.L.U.</h1>
           </div>
           <div class="mainHeaderContactInfo column column50">
@@ -29,7 +31,7 @@
       <div class="container containerFlex">
           <ul class="menu">
               <li class="toggle"><a href="#"><i class="icon-menu iconLink"></i></a></li>
-              <li class="item"><a href="index.html" class="menuLink">Home</a></li>
+              <li class="item"><a href="../index.html" class="menuLink">Home</a></li>
               <li class="item"><a href="about.html" class="menuLink">Sobre nosotros</a></li>
               <li class="item">
                   <a tabindex="0">Servicios<span class="icon-menu2"></span></a>
@@ -49,18 +51,18 @@
               <li class="item"><a href="contact.html" class="menuLink menuLinkSelect">Contacto</a></li>
           </ul>
           <div class="socialIcon">
-              <a href="https://www.facebook.com/" class="socialIconLink"><span class="icon-facebook"></span></a>
-              <a href="https://twitter.com/?lang=es" class="socialIconLink"><span class="icon-twitter"></span></a>
+              <a href="https://www.facebook.com/" target="_blank" class="socialIconLink"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/?lang=es" target="_blank" class="socialIconLink"><span class="icon-twitter"></span></a>
               <a href="contact.html" class="socialIconLink"><span class="icon-mail"></span></a>
           </div>
       </div>
     </nav>
     <ul class="breadcrumb"><!--Create the breadcrumb-->
-      <li><a href="index.html">Home</a></li>
+      <li><a href="../index.html">Home</a></li>
       <li><a href="#">Contacto</a></li>
     </ul>
     <section class="banner"><!--Create the banner-->
-        <img src="img/contactbanner.jpg" alt="banner" class="bannerImg">
+        <img src="../img/contactbanner.jpg" alt="banner" class="bannerImg">
         <h2 class="bannerContent">Contacto</h2>
     </section>
     <main class="main">
@@ -69,11 +71,11 @@
             <form name="contactForm" onsubmit="return formValidation();" class="contactForm" id="contactForm">
                 <ul>
                     <li><label for="names" class="formLabel">Nombre</label></li>
-                    <li><input type="text" name="names" class="formInput"></li>
+                    <li><input type="text" name="names" id="names" class="formInput"></li>
                     <li><label for="phones" class="formLabel">Teléfono</label></li>
-                    <li><input type="text" name="phones" class="formInput"></li>
+                    <li><input type="text" name="phones" id="phones" class="formInput"></li>
                     <li><label for="mails" class="formLabel">Email</label></li>
-                    <li><input type="text" name="mails" class="formInput"></li>
+                    <li><input type="text" name="mails" id="mails" class="formInput"></li>
                     <li><select name="asunto" class="formSelect" >
                         <option selected="" value="Default">Seleccione una opción</option>
                         <option value="1">Información sobre servicios</option>
@@ -94,7 +96,7 @@
         <div class="container containerFlex">
             <div class="column column33">
                 <h2 class="columnTitle">¿Por qué visitarnos?</h2>
-                <p class="columnTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita doloremque obcaecati provident similique! Quas, ullam quaerat! Impedit perferendis ea inventore quibusdam blanditiis minima, consectetur, amet reprehenderit possimus aperiam ab. Doloremque.</p>
+                <p class="columnTxt">Si buscas poder ver nuestros equipos, conocer mejor nuestro trabajo, una rapida respuesta o conocer nuestras instalaciones, ven a vernos.</p>
             </div>
             <div class="column column33">
                 <h2 class="columnTitle">Contáctanos</h2>
@@ -104,14 +106,21 @@
             </div>
             <div class="column column33">
               <h2 class="columnTitle">Síguenos en nuestras redes</h2>
-              <p class="columnTxt"><a href="https://www.facebook.com/" class="icon-facebook"> Facebook</a></p>
-              <p class="columnTxt"><a href="https://twitter.com/?lang=es" class="icon-twitter"> Síguenos en Twitter</a></p>
-              <p class="columnTxt"><a href="https://www.youtube.com/" class="icon-youtube"> Visita nuestro canal</a></p>
+              <p class="columnTxt"><a href="https://www.facebook.com/" target="_blank" class="icon-facebook"> Facebook</a></p>
+              <p class="columnTxt"><a href="https://twitter.com/?lang=es" target="_blank" class="icon-twitter"> Síguenos en Twitter</a></p>
+              <p class="columnTxt"><a href="https://www.youtube.com/" target="_blank" class="icon-youtube"> Visita nuestro canal</a></p>
             </div>  
         </div>
         <p class="copy">© 2020 Sonomas S.L.U. | Todos los derechos reservados</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </p>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/contact.js"></script>  
+    <script src="../js/menu.js"></script>
+    <script src="../js/contact.js"></script>  
 </body>
 </html>

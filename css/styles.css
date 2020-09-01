@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;700&display=swap');
-
+@font-face {
+    font-family: "Fjalla One";
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
 /* -------- Start whith reset.css --------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -286,6 +297,7 @@ ul.breadcrumb li a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: .8em;
+    line-height : 25px;
 }
 .copy {
     text-align: center;
@@ -303,6 +315,7 @@ ul.breadcrumb li a:hover {
 }
 .columnTitle {
     font-size: 1.3em;
+    font-weight: bold;
 }
 
  /* -------- Responsive Stiles -------- */

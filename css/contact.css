@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Fjalla One";
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
 /* -------- Contact form stiles --------*/
 .main {
     height: 800px; 
@@ -24,7 +37,6 @@
     top: -50px;
 }
 .contactForm{
-    position: flex;
     text-align: center;
     width: 100%;
     height: 600px;
@@ -33,7 +45,6 @@
 .submit {
     font-size: 1.5em;
     width: 200px;
-    display: flexbox;
 }
 .formInput {
     font-size: 1.1em;

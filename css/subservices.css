@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Fjalla One";
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+/* -------- Subservices stiles -------- */
 .groupColor .container {
     background: #fcab01;
     color: white;
@@ -17,6 +31,9 @@
     font-size: 1.5em;
     text-align: center;
     border: 10px;    
+}
+.mainAboutDescription{
+    padding: 10px;
 }
 .mainAboutDescription .column:nth-child(2) {
     padding: 10px;
@@ -74,7 +91,6 @@
     align-items: center;
 }
 .formTitle {
-    display: flexbox;
     text-align: center;
     margin-top: 0;
     color: black;
