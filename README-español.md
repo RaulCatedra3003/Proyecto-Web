@@ -4,12 +4,12 @@ _Realización de una web estática como proyecto de presentación._
 
 ## Comenzando 🚀
 
-_Descarga los archivos para correr la web en tu navegador de manera local_
+_Descarga los archivos para correr la web en tu navegador de manera local._
 
 
 ### Pre-requisitos 📋
 
-_No es necesaria la instalción de software para poder ver el proyecto_
+_No es necesaria la instalación de software para poder ver el proyecto._
 
 ## Construido con 🛠️
 
@@ -19,7 +19,7 @@ _No es necesaria la instalción de software para poder ver el proyecto_
 
 ## Autores ✒️
 
-* **Raúl Cátedra Martínez** - *Trabajo Inicial* *Documentación* - [RaulCatedra3003](https://github.com/RaulCatedra3003)
+* **Raúl Cátedra Martínez** - *Trabajo Inicial*  *Documentación* - [RaulCatedra3003](https://github.com/RaulCatedra3003)
 
 
 ## Expresiones de Gratitud 🎁
